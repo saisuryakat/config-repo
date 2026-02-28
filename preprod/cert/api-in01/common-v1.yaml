@@ -1,0 +1,11 @@
+# Entity api-in01 (IN market): common config for this entity. No API names.
+
+ecommerce:
+  market:
+    code: IN
+    timezone: Asia/Kolkata
+    locale: en_IN
+    currency: INR
+  messaging:
+    mq:
+      queue-prefix: in01

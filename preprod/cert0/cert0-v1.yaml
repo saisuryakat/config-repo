@@ -1,0 +1,16 @@
+# cert0 env overrides (overrides common-api-v1). No API names.
+
+messaging:
+  mq:
+    hostname: mq-cert0.preprod.internal
+    port: 5672
+    request-queue: ecommerce.cert0.request
+    response-queue: ecommerce.cert0.response
+
+logging:
+  level:
+    root: INFO
+
+ecommerce:
+  api:
+    timeout-seconds: 45

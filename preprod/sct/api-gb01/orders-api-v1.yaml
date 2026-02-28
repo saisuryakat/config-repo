@@ -1,0 +1,13 @@
+spring:
+  application:
+    name: orders-api
+
+messaging:
+  mq:
+    request-queue: gb01.orders.request
+    response-queue: gb01.orders.response
+
+ecommerce:
+  orders:
+    max-items-per-order: 50
+    idempotency-window-minutes: 15

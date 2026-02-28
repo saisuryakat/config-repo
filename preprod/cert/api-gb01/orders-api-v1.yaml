@@ -1,0 +1,25 @@
+# orders-api for entity api-gb01 (cert). API name and API-specific config here.
+
+spring:
+  application:
+    name: orders-api
+
+logging:
+  level:
+    com.ecommerce.orders: DEBUG
+
+messaging:
+  mq:
+    request-queue: gb01.orders.request
+    response-queue: gb01.orders.response
+
+kubernetes:
+  resources:
+    requests:
+      cpu: "300m"
+      memory: "512Mi"
+
+ecommerce:
+  orders:
+    max-items-per-order: 50
+    idempotency-window-minutes: 15

@@ -1,0 +1,13 @@
+spring:
+  application:
+    name: customers-api
+
+messaging:
+  mq:
+    request-queue: gb01.customers.request
+    response-queue: gb01.customers.response
+
+ecommerce:
+  customers:
+    session-timeout-minutes: 45
+    pii-masking-enabled: true

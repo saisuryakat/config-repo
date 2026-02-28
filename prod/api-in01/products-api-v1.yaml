@@ -1,0 +1,27 @@
+spring:
+  application:
+    name: products-api
+
+logging:
+  level:
+    com.ecommerce.products: INFO
+
+messaging:
+  mq:
+    request-queue: in01.products.request
+    response-queue: in01.products.response
+
+kubernetes:
+  resources:
+    requests:
+      cpu: "500m"
+      memory: "512Mi"
+    limits:
+      cpu: "2000m"
+      memory: "1Gi"
+  replicas: 2
+
+ecommerce:
+  products:
+    cache-ttl-seconds: 180
+    max-page-size: 50

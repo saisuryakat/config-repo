@@ -1,0 +1,11 @@
+# Entity api-gb01 (GB market): common config for this entity. No API names.
+
+ecommerce:
+  market:
+    code: GB
+    timezone: Europe/London
+    locale: en_GB
+    currency: GBP
+  messaging:
+    mq:
+      queue-prefix: gb01

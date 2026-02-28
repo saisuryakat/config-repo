@@ -1,0 +1,24 @@
+spring:
+  application:
+    name: customers-api
+
+logging:
+  level:
+    com.ecommerce.customers: INFO
+
+messaging:
+  mq:
+    request-queue: in01.customers.request
+    response-queue: in01.customers.response
+
+kubernetes:
+  resources:
+    requests:
+      cpu: "300m"
+      memory: "512Mi"
+  replicas: 2
+
+ecommerce:
+  customers:
+    session-timeout-minutes: 20
+    pii-masking-enabled: true

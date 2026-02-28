@@ -1,0 +1,24 @@
+spring:
+  application:
+    name: orders-api
+
+logging:
+  level:
+    com.ecommerce.orders: INFO
+
+messaging:
+  mq:
+    request-queue: in01.orders.request
+    response-queue: in01.orders.response
+
+kubernetes:
+  resources:
+    requests:
+      cpu: "500m"
+      memory: "512Mi"
+  replicas: 2
+
+ecommerce:
+  orders:
+    max-items-per-order: 99
+    idempotency-window-minutes: 5

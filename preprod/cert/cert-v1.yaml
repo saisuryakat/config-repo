@@ -1,0 +1,17 @@
+# cert env overrides (overrides common-api-v1). No API names.
+
+messaging:
+  mq:
+    hostname: mq-cert.preprod.internal
+    port: 5672
+    request-queue: ecommerce.cert.request
+    response-queue: ecommerce.cert.response
+
+logging:
+  level:
+    root: DEBUG
+
+kubernetes:
+  resources:
+    limits:
+      memory: "1Gi"

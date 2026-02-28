@@ -1,0 +1,27 @@
+# products-api for entity api-gb01 (cert). API name and API-specific config here.
+
+spring:
+  application:
+    name: products-api
+
+logging:
+  level:
+    com.ecommerce.products: DEBUG
+
+messaging:
+  mq:
+    request-queue: gb01.products.request
+    response-queue: gb01.products.response
+
+kubernetes:
+  resources:
+    requests:
+      cpu: "250m"
+      memory: "512Mi"
+    limits:
+      memory: "1Gi"
+
+ecommerce:
+  products:
+    cache-ttl-seconds: 600
+    max-page-size: 100

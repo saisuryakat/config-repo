@@ -1,0 +1,25 @@
+# customers-api for entity api-in01 (cert). API name and API-specific config here.
+
+spring:
+  application:
+    name: customers-api
+
+logging:
+  level:
+    com.ecommerce.customers: DEBUG
+
+messaging:
+  mq:
+    request-queue: in01.customers.request
+    response-queue: in01.customers.response
+
+kubernetes:
+  resources:
+    requests:
+      cpu: "200m"
+      memory: "384Mi"
+
+ecommerce:
+  customers:
+    session-timeout-minutes: 30
+    pii-masking-enabled: true
