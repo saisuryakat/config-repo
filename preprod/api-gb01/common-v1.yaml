@@ -1,0 +1,8 @@
+logging:
+  level:
+    root: DEBUG
+
+kubernetes:
+  resources:
+    limits:
+      memory: "1Gi"

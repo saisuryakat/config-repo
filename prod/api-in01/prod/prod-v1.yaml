@@ -1,0 +1,14 @@
+# prod env overrides (overrides common-api-v1). No API names.
+
+messaging:
+  mq:
+    request-queue: ecommerce.prod.request
+    response-queue: ecommerce.prod.response
+
+logging:
+  level:
+    root: WARN
+
+ecommerce:
+  api:
+    timeout-seconds: 15

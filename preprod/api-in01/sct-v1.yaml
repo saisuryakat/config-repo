@@ -1,0 +1,11 @@
+# sct env overrides (overrides common-api-v1). No API names.
+
+messaging:
+  mq:
+    hostname: mq-sct.preprod.internal
+    port: 5672
+    request-queue: ecommerce.sct.request
+    response-queue: ecommerce.sct.response
+
+kubernetes:
+  replicas: 1
