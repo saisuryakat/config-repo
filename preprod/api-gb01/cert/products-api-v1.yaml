@@ -4,10 +4,6 @@ spring:
   application:
     name: products-api
 
-logging:
-  level:
-    com.ecommerce.products: DEBUG
-
 messaging:
   mq:
     request-queue: gb01.products.request
