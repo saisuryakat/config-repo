@@ -8,6 +8,7 @@ messaging:
   mq:
     request-queue: gb01.products.request
     response-queue: gb01.products.response
+    retries: 1
 
 kubernetes:
   resources:
