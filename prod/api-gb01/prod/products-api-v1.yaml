@@ -25,3 +25,4 @@ ecommerce:
   products:
     cache-ttl-seconds: 300
     max-page-size: 100
+    limits: 500
